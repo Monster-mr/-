@@ -1,0 +1,42 @@
+slice
+array.slice(0,3);   索引 0， 1， 2
+array.slice(3);     3到结束
+array.slice();     表示从头索引到结束 即一个列表的复制
+
+push pop
+
+
+sort
+
+
+unshift和shift
+如果要往Array的头部添加若干元素，使用unshift
+shift方法则是把Array的第一个元素删除
+
+reverse
+
+
+“splice”
+
+splice方法是Array操作的万能方法，它可以从指定的索引开始删除
+若干元素然后再从该位置添加若干元素
+arr.splice（2,3，‘google’，‘name’）
+从索引2的位置删除3个元素，然后再添加两个，返回删除的3个元素
+arr.splice（2,3）只删除不添加
+arr.splice（2,0，‘google’，‘name’）只添加不删除
+
+“concat”
+concat把当前的Array和另一个Array连接起来，并返回一个新的Array
+var arr = ['A','B','C']
+Var add = arr.concat（[1,2,3]）
+
+敲黑板 concat()方法并没有修改当前Array，而是返回了一个新的Array
+
+实际上 concat（）方法可以接受任意个元素和Array，并且自动把Array拆开，
+然后全部添加到新的Array内
+
+var newadd=arr.concat（1,2，[3,4]）;
+
+join
+arr.join（'-'）   将arr内的左右元素用-连接起来返回string类型字符串（
+如果arr元素不为字符串，将自动转为字符串后再连接）

@@ -1,0 +1,67 @@
+<style type="text/css">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+     body,html{
+      height: 100%
+     }
+     .col{
+      height: 100%;
+      background: #e3e3e3;
+      display: flex;
+      /* 正好与横向的属性设置相反 */
+      flex-direction:column;/* 将方向设置为垂直*/
+      justify-content: space-between;/* 两端对齐*/
+      align-items: center;/* 水平居中 */
+     }
+     .head{
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: #fff;
+     }
+     .content{
+      width: 300px;
+      height: 400px;
+      background: green;
+     }
+    .row-between{
+      width: 90%;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo{
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      background: pink;
+      text-align: center;
+      color:#fff;
+    }
+    button{
+      width: 100px;
+      height: 30px;
+      border:1px solid pink;
+      border-radius: 8px;
+      background: #fff;
+    }
+
+   </style>
+  <div class="col">
+    <div class="head">
+      我是个放头像的地方
+    </div>
+    <div class="content">
+    </div>
+    <div class="row-between">
+     <button>按钮一</button>
+     <div class="logo">
+       logo
+     </div>
+     <button>按钮二</button>
+   </div>
+  </div>
+

@@ -1,0 +1,10 @@
+注意 此用法为es6最新语法   倘若浏览器过于古老，将不奏效 只能用字符串拼接
+var name ="小明"
+var age = 20
+var message = `你好${name},你今年大概${age}岁了吧"
+
+
+字符串拼接
+var name ="小明"
+var age = 20
+var message = '你好'+name+‘，你今年大概’+ age+‘岁了吧’

@@ -1,0 +1,15 @@
+.box{
+	/*flex布局第一步，找到你要布局元素的父元素*/
+	display:flex;
+	/* 第二步：判断方向：元素是横着排还是竖着排，默认为横着排，当项目空间不够时，是否换行 */
+	flex-direction: row(横向)|column(纵向)
+	flex-wrap:nowrap(默认不换行)|wrap（换行，新元素在下面一行|wrap-reverse（换行，新元素在上面一行））
+    /* 第三步：根据方向，进行布局操作,注意敲黑板啦
+        当为横向时，水平布局的操作用justify-content属性，垂直方向的操作用align-items属性；
+        当为纵向时，两属性的作用正好相反，水平布局的操作用align-items属性，垂直方向的操作用justify-content属性；
+        以上两个属性是用的最多的属性了。
+    */
+	justify-content: flex-start | flex-end | center | space-between | space-around;
+    align-items: flex-start | flex-end | center | baseline | stretch;
+！
+}

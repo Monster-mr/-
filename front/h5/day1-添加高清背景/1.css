@@ -1,0 +1,23 @@
+body{
+	position:relative;
+    background: url(shineboy.jpg) center center;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+  
+
+}
+
+body,html{
+    height: 100%;
+    color: #ff00ff;
+    font-family: sans-serif;
+}
+.container{
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+    text-align: center;
+    width:100%
+
+}

@@ -1,0 +1,18 @@
+纯ES6语法   跟浏览器没关系
+
+
+变量声明   
+let targetTempc      //等价于“let targetTempC = undefine”
+注意用来声明变量只能let一次一个作用于内  不能再let声明同一个变量
+需要修改变量时   targetTempc =22.5  直接赋值
+
+let关键字可以同时声明多个变量
+let targetTempC, room1 = “conference_room_a, room2 = "conserence_room_b"
+
+常量声明
+const
+const Room_Temp_c =21.5
+常量一旦初始化就不能再改变
+
+
+

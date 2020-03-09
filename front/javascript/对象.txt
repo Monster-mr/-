@@ -1,0 +1,20 @@
+对象访问其内的属性通过.操作符完成，但要求
+属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用
+‘’括起来
+
+var xiaohong={
+   name:'xiaohong',
+   'middle-school':'teshuzifu'
+
+
+}
+xiaohong 的属性名middle-school不是一个有效的变量，就需要用‘’括起来。访问这个属相时无法使用.操作符
+，必须使用['']来访问
+
+
+'toString'  in xiaohong
+
+in包括xiaohong继承的属性
+
+私有属性用
+hasOwnProperty

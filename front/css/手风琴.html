@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴</title>
+    <style>
+        .accordionMenu{
+            background: #ffffff;
+            color:#424242;
+            font: 12px Arial, Verdana, SansSerif;
+            margin: 0 auto;
+            padding: 10px;
+            width: 500px;
+
+        }
+        .accordionMenu h2{
+            margin:20px 0;
+            position: relative;     /*相对定位 也不知是不是为绝对定位准备的 行内元素无法设置宽度 高度 行高*/
+        }
+        .accordionMenu h2::before{          /*制作下三角效果*/
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            border:5px solid #fff0f0;
+            border-color: #fff transparent transparent;   /*模拟三边型*/
+            content: "";
+            height: 0;
+            width: 0;
+
+        }
+        /*制作手风琴标题栏效果*/
+        .accordionMenu h2 a{
+            background: #8f8f8f;
+            background: -webkit-gradient(linear, left top, left bottom, from(#cecece),to(#8f8f8f));
+            border-radius: 5px;
+            color: #424242;
+            font-size: 13px;
+            margin: 0 ;
+            display: block;
+            padding: 10px 10px;
+            text-decoration: none;
+            text-shadow:  2px 2px 2px #aeaeae;
+
+        }
+        .accordionMenu :target h2 a,
+        .accordionMenu h3 a:focus,
+        .accordionMenu h2 a:hover,
+        .accordionMenu h2 a:active{
+            background: #2288dd;
+            background: -webkit-gradient(linear, left top, left bottom, from(#6bb2ff),to(#2288dd));
+            color:#fff;
+        }
+        .accordionMenu p{
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+            padding: 0 10px;
+            transition: height 0.5s ease-in;
+
+        }
+        .accordionMenu :target p{
+            height:100px;
+            overflow: auto;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="accordionMenu">
+        <div class="menuSection" id="brand">
+            <h2><a href="#brand">Brand</a></h2>
+            <p>LORE ISPOM</p>
+        </div>
+        <div class="menuSection" id="promotion">
+            <h2><a href="#promotion">Promotion</a></h2>
+            <p>LORE ISPOM</p>
+        </div>
+        <div class="menuSection" id="event">
+            <h2><a href="#event">Event</a></h2>
+            <p>LORE ISPOM</p>
+        </div>
+    </div>
+
+</body>
+</html>
